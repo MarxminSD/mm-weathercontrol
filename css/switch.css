@@ -1,0 +1,50 @@
+/* The switch container */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%); /* Center the switch */
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e9ecef;
+    transition: .2s;
+    border-radius: 10px; /* Half of the height to create a pill shape */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #495057;
+    transition: .2s;
+    border-radius: 25%; /* Perfect circle for the toggle button */
+  }
+  
+  input:checked + .slider {
+    background-color: #adb5bd;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 2px #e9ecef;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px); /* Adjust if necessary to fit the switch width */
+  }
+  
+  /* Remove the .slider.round classes as they're no longer needed */
+  

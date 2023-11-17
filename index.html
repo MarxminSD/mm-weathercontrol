@@ -5,6 +5,7 @@
     <title>mm-minigames</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/weather-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/switch.css">
 
 	<!-- Font Awesome Icons Import -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -26,10 +27,17 @@
             <div class="menu-item" data-category="fog"><span class="menu-item-text">Fog</span></div>
         </div>
 
+        <label class="switch">
+            <input type="checkbox" id="toggle-switch">
+            <span class="slider round"></span>
+        </label>
+          
+
         
         <script src="https://cdn.jsdelivr.net/npm/@mojs/core@1.2.1/dist/mo.umd.min.js"></script>
 
         <script src="js/weather-menu.js"></script>
+        <script src="js/switch.js"></script>
 
     </body>
 </html>
